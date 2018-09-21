@@ -1,0 +1,10 @@
+[package]
+name = "rust-wasm-demo"
+version = "1.0.0"
+authors = ["Vyacheslav Moskalev"]
+
+[lib]
+crate-type = ["cdylib"]
+
+[dependencies]
+wasm-bindgen = "0.2"

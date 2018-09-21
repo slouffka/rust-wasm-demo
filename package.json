@@ -1,0 +1,19 @@
+{
+  "name": "rust-wasm-demo",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "devDependencies": {
+    "html-webpack-plugin": "^3.2.0",
+    "webpack": "^4.19.1",
+    "webpack-cli": "^3.1.0",
+    "webpack-dev-server": "^3.1.8"
+  },
+  "scripts": {
+    "serve": "webpack-dev-server",
+    "build-wasm": "cargo +nightly build --target wasm32-unknown-unknown",
+    "build-bindgen":
+      "wasm-bindgen target/wasm32-unknown-unknown/debug/rust_wasm_demo.wasm --out-dir build",
+    "build": "yarn build-wasm && yarn build-bindgen && yarn webpack"
+  }
+}
