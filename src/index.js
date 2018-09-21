@@ -1,3 +1,3 @@
-const wasm = import('../build/rust_wasm_demo');
+const rust = import('../build/rust_wasm_demo');
 
-wasm.then(m => m.greet('vortex'));
+rust.then(m => m.greet('vortex'));
