@@ -12,8 +12,7 @@
   "scripts": {
     "serve": "webpack-dev-server",
     "build-wasm": "cargo +nightly build --target wasm32-unknown-unknown",
-    "build-bindgen":
-      "wasm-bindgen target/wasm32-unknown-unknown/debug/rust_wasm_demo.wasm --out-dir build",
+    "build-bindgen": "wasm-bindgen target/wasm32-unknown-unknown/debug/rust_wasm_demo.wasm --out-dir build",
     "build": "yarn build-wasm && yarn build-bindgen && yarn webpack"
   }
 }

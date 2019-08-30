@@ -2,9 +2,9 @@ extern crate wasm_bindgen;
 
 use wasm_bindgen::prelude::*;
 
-// import window.alert function from the Web.
+// import `window.alert` function from the Web.
 #[wasm_bindgen]
-extern {
+extern "C" {
     fn alert(s: &str);
 }
 
