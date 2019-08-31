@@ -1,3 +1,5 @@
 const rust = import('../build/rust_wasm_demo');
 
-rust.then(m => m.greet('username'));
+rust
+  .then(m => m.greet('username'))
+  .catch(console.error);
