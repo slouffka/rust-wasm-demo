@@ -1,5 +1,3 @@
-extern crate wasm_bindgen;
-
 use wasm_bindgen::prelude::*;
 
 // import `window.alert` function from the Web.

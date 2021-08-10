@@ -1,4 +1,4 @@
-const rust = import('../build/rust_wasm_demo');
+const rust = import('../pkg');
 
 rust
   .then(m => m.greet('username'))
