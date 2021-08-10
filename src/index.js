@@ -1,5 +1,2 @@
-const rust = import('../pkg');
-
-rust
-  .then(m => m.greet('username'))
+import('../pkg')
   .catch(console.error);
